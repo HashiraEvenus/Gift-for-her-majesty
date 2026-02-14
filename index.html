@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surprise Gift</title>
+  <style>
+    :root{
+      --bg1:#0b121a;
+      --bg2:#111c28;
+      --card:#0f1a26;
+      --border:#1d2b3a;
+      --text:#d7e6f5;
+      --muted:#9bb3c9;
+      --accent:#66c0f4;
+      --shadow: rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% 15%, #142435 0%, transparent 60%),
+                  radial-gradient(900px 500px at 80% 20%, #122437 0%, transparent 55%),
+                  linear-gradient(180deg, var(--bg1), var(--bg2));
+      padding:24px;
+    }
+    .card{
+      width:min(720px, 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)),
+                  var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow: 0 16px 50px var(--shadow);
+      overflow:hidden;
+    }
+    .topbar{
+      padding:18px 22px;
+      background: linear-gradient(90deg, rgba(102,192,244,.15), rgba(42,71,94,.12));
+      border-bottom:1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 18px rgba(102,192,244,.55);
+      flex:0 0 auto;
+    }
+    .content{ padding:22px; }
+    .msg{
+      margin:0;
+      color:var(--text);
+      font-size:16px;
+      line-height:1.8;
+      white-space:pre-line;
+    }
+    .giftline{
+      margin-top:16px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .gift-emoji{
+      width:44px;height:44px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background: rgba(102,192,244,.10);
+      border:1px solid rgba(102,192,244,.25);
+      box-shadow: 0 10px 24px rgba(102,192,244,.10);
+      font-size:22px;
+      cursor:pointer;
+      text-decoration:none;
+      color:inherit;
+      transition: transform .1s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .gift-emoji:hover{
+      background: rgba(102,192,244,.2);
+      box-shadow: 0 12px 28px rgba(102,192,244,.2);
+      transform: scale(1.08);
+    }
+    .gift-emoji:active{ transform: scale(0.98) }
+    .btns{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      appearance:none;
+      border:none;
+      cursor:pointer;
+      border-radius:12px;
+      padding:12px 14px;
+      font-weight:700;
+      letter-spacing:.2px;
+      transition: transform .06s ease, filter .15s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      user-select:none;
+      text-decoration:none;
+    }
+    .btn:active{transform: translateY(1px)}
+    .btn-primary{
+      background: linear-gradient(180deg, var(--accent), #3a89b7);
+      color:#061019;
+      box-shadow: 0 10px 24px rgba(102,192,244,.18);
+    }
+    .hint{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+      opacity:.9;
+    }
+    .from{
+      color:var(--muted);
+      font-size:13px;
+      font-weight:600;
+      white-space:nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="topbar">
+      <div class="badge"><span class="dot"></span> Surprise Gift</div>
+      <div class="from">— Μάριος</div>
+    </div>
+
+    <div class="content">
+      <p class="msg">Παρακάτω θα βρεις ένα μικρό δωράκι που δημιούργησα με σκοπό να φανεί χρήσιμο στην πορεία σου οσο οδεύεις προς το τέλος του διδακτορικού σου.
+Γνωρίζω για την συγκεκριμένη σου αγάπη προς το συγκεκριμένο όν και ελπίζω να έκανα καλή δουλειά.
+Ένα δώρο γεμάτο αγάπη, για εσένα, από τον αγαπημένο σου στην δήηηηθεν πιο γεμάτη αγάπη μέρα
+
+Σε αγαπάω, Ανναμαρία μου</p>
+
+      <div class="giftline">
+        <a class="gift-emoji" href="surprise-favicon-32x32.png" download title="Κατέβασε το δωράκι σου">🎁</a>
+        <div>Surprise TINY LITTLE EENY MINY THINGY!!!!!!!!!!!!!!!!!</div>
+      </div>
+
+      <div class="hint">
+        (Αν δεν κατεβαίνει με το κλικ, πάτησε δεξί κλικ στο δώρο → “Save link as…”.)
+        <h4>
+          P.S. come back to this after you've realized you cannot understand where to use it.
+          <br>
+          <button id="toggle-hint-btn" style="margin-top:8px; font-size:12px; background:none; border:none; color:var(--accent); cursor:pointer; padding:0; text-decoration:underline;">
+            Show more
+          </button>
+          <span id="hint-extra" style="display:none;">
+            <h6 style="display:inline; font-size:12px; font-weight:500; margin-left:6px;">This is intended to be used as a tab icon.</h6>
+          </span>
+        </h4>
+        <script>
+          const btn = document.getElementById('toggle-hint-btn');
+          const extra = document.getElementById('hint-extra');
+          let shown = false;
+          btn.addEventListener('click', function() {
+            shown = !shown;
+            extra.style.display = shown ? '' : 'none';
+            btn.textContent = shown ? 'Hide extra info' : 'Show more';
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
